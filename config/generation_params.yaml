@@ -1,0 +1,39 @@
+generation:
+  start_date: "2023-01-01"
+  end_date: "2025-12-31"
+  seed: 42
+
+financial:
+  initial_balance: 450000.0
+  avg_monthly_income: 650000.0
+  avg_monthly_expense: 580000.0
+  income_std_dev: 52000
+  expense_std_dev: 46400
+  random_variation_mean: 1.0
+  random_variation_std: 0.08
+
+invoices:
+  yearly_increase: 0.05
+  min_amount: 1000
+  max_amount: 150000
+  vat_rate: 0.21
+
+bank:
+  avg_monthly_transactions: 140
+  transaction_std_dev: 30
+
+crm:
+  monthly_deals_created: 12
+  win_rate: 0.35
+  avg_deal_size: 75000
+  deal_cycle_days: 90
+
+employees:
+  count: 65
+  avg_salary: 2400
+  ss_contribution_rate: 0.32
+
+output:
+  path: "data/raw"
+  format: "csv"
+  encoding: "utf-8"

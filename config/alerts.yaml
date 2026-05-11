@@ -1,0 +1,18 @@
+alerts:
+  enabled: true
+  
+  thresholds:
+    min_balance: 50000
+    min_variation_7d: -0.15
+    max_deviation_forecast: 0.10
+    projection_floor: 25000
+    anomaly_multiplier: 3.0
+  
+  schedule:
+    check_frequency_hours: 6
+    enabled: true
+  
+telegram:
+  bot_token: "8752588069:AAFCW0wTJDQb7xRTxuTi7O-6KNQjvZqVyLM"
+  admin_chat_id: "5492378534"
+  enabled: true

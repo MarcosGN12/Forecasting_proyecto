@@ -1,0 +1,87 @@
+empresa:
+  nombre: "Industrial Metálica Portillo S.L."
+  cif: "B-45678901"
+  direccion: "Polígono Industrial La Vega, Calle Metalurgia 23, Portillo de Toledo"
+  sector: "Fabricación de componentes metálicos para automoción"
+  tamano: "mediana"
+  empleados: 65
+  facturacion_anual: 8000000
+
+tesoreria:
+  saldo_inicial: 450000.0
+  saldo_minimo_umbral: 50000.0
+  saldo_proyeccion_floor: 25000.0
+
+ciclos:
+  cobro:
+    grande: 60
+    mediano: 45
+    pequeno: 30
+  pago:
+    principal: 90
+    secundario: 60
+    pequeno: 30
+
+estacionalidad:
+  factor:
+    1: 0.95
+    2: 0.98
+    3: 1.10
+    4: 1.05
+    5: 1.02
+    6: 0.90
+    7: 0.70
+    8: 0.65
+    9: 1.00
+    10: 1.15
+    11: 1.20
+    12: 1.10
+
+clientes:
+  - nombre: "AutoPartes Castilla S.A."
+    sector: "automoción"
+    facturacion_anual: 2100000
+    ciclo_pago: 60
+    probabilidad_incumplimiento: 0.02
+  - nombre: "MotorTech Solutions S.L."
+    sector: "automoción"
+    facturacion_anual: 1800000
+    ciclo_pago: 45
+    probabilidad_incumplimiento: 0.01
+  - nombre: "Industrial Vical S.A."
+    sector: "maquinaria"
+    facturacion_anual: 1200000
+    ciclo_pago: 30
+    probabilidad_incumplimiento: 0.03
+  - nombre: "Componentes Henares S.L."
+    sector: "automoción"
+    facturacion_anual: 900000
+    ciclo_pago: 60
+    probabilidad_incumplimiento: 0.02
+  - nombre: "Talleres Línea Sur S.L."
+    sector: "automoción"
+    facturacion_anual: 600000
+    ciclo_pago: 30
+    probabilidad_incumplimiento: 0.04
+
+proveedores:
+  - nombre: "MetalSteel S.A."
+    categoria: "materia_prima"
+    gasto_anual: 1500000
+    ciclo_pago: 90
+  - nombre: "Recambios Express S.L."
+    categoria: "repuestos"
+    gasto_anual: 400000
+    ciclo_pago: 30
+  - nombre: "Energía Castilla"
+    categoria: "utilidades"
+    gasto_anual: 350000
+    ciclo_pago: 15
+  - nombre: "Embalajes Toledo S.L."
+    categoria: "envases"
+    gasto_anual: 200000
+    ciclo_pago: 60
+  - nombre: "Servicios Logs S.L."
+    categoria: "servicios"
+    gasto_anual: 180000
+    ciclo_pago: 30
